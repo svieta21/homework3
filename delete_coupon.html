@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/" />
+<title>delete_coupon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">delete_coupon</td></tr>
+</thead><tbody>
+<tr>
+	<td>type</td>
+	<td>css=input.form-control[name='name']</td>
+	<td>Svitlana_Kolisnichenko</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn[&quot;Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>//div[@id='content']//table.1.0</td>
+	<td>Svitlana_Kolisnichenko</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.glyphicon.glyphicon-trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.confirm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>//div[@id='content']//table//tr//td[text()='Svitlana_Kolisnichenko']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
